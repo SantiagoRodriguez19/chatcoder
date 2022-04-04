@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Websocket</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <h1>Bienvenidos al chetochat</h1>
-    <div>
-        <input id="chatBox">
+    <h1>Bienvenidos al Basic_chat</h1>
+    
+    <div class="chat">
+        <input id="chatBox" placeholder="Escriba su mensaje">
+        <button class="btn-send" id="btn">Enviar
+        </button>
+        <div class="messages">
+             <p class="text" id="log"></p>
+             
+    
     </div>
-    <p id="log"></p>
+    
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="index.js"></script>
